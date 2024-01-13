@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: white;
     font-family: 'Martel Sans', sans-serif;
     box-sizing: border-box;
 }
@@ -10,15 +10,14 @@ header, nav, main, footer {
 }
 
 header {
-    background-color: #ADCEC3;
-    color: #2B5767;
+    background-color: #DBEEB8;
+    color: #312E1B;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 header img {
@@ -31,30 +30,32 @@ header span {
 }
 
 nav {
-    background-color: #2B5767;
+    background-color: #324E02;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    font-size: 1.2rem;
 }
 
 nav a {
-    color: #adcec3;
+    color: white;
     text-decoration: none;
     display:block;
     text-align: center;
     padding:.5rem;
 }
 
-nav a:hover {
-    background-color: rgba(255,255,255,0.2);
-    color: rgba(255,255,255,0.9);
+nav a:hover, .active a:hover {
+    background-color: rgba(255,255,255,0.8);
+    color: rgba(0,0,0,0.9);
 }
 
-nav .active {
-    background-color: rgba(0,0,0,0.3);
+nav .active a {
+    background-color: rgba(255, 255, 255, 0.6); 
+    color: #4A4629;
 }
 
 h1 {
@@ -63,24 +64,55 @@ h1 {
     border-bottom: 2px dotted black;
     margin: 1.5rem;
     font-family: 'Bitter', 'serif';
+    color: #312E1B;
 }
 
 .card {
-    border: 1px dotted #967D4D;
+    border: 1px dotted #8E7C5B;
     border-radius: 5px;
     text-align: center;
     margin: 1.8rem;
+    font-size: 1.2rem;
 }
 
 .card h2 {
-    background-color: #967D4D;
+    background-color: #BBBA99;
     margin: 0;
     padding: .5rem;
-    color: #FFFBDA; 
+    color: #312E1B; 
     border-radius: 5px 5px 0px 0px;
 }
 
 .card ul {
     list-style-type: none;
     text-align: left;
+    padding: 1.5rem;
 }
+
+.card a {
+    color: #4F3303;
+}
+
+.card a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #DBEEB8;
+    color: #312E1B;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+#lastModified {
+    font-size: 1rem;
+    color: #4F3303;
+    font-family: 'Bitter', 'serif';
+}
+

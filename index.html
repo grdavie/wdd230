@@ -29,10 +29,10 @@
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
-        <section class="card">
+        <section class="card" id="learning-act">
             <h2>Learning Activities</h2>
             <ul>
-                <li>Week 01: <a href="#">Layout</a> | Media Query | JS Pen</li>
+                <li>Week 01: <a href="holygrail.html">Layout</a> | <a href="media-query.html">Media Query</a> | <a href="https://codepen.io/grdavie/pen/PoLzEYo">JS Pen</a></li>
                 <li>Week 02:</li>
                 <li>Week 03:</li>
                 <li>Week 04:</li>
@@ -40,14 +40,15 @@
                 <li>Week 06:</li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card" id="info">
             <h2>Information</h2>
             <p>Weather information will go here</p>
         </section>
     </main>
     <footer>
-        <p>&copy; | Gayle Reyna-Davie | Australia 🇦🇺</p>
+        <p>&copy;<span id="year"></span> | Gayle Reyna-Davie | Australia 🇦🇺</p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getDates.js"></script>
 </body>
 </html>

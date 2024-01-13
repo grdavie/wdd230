@@ -1,0 +1,45 @@
+@media screen and (min-width: 500px) {
+
+    header, nav, main, footer {
+        max-width: 100%;
+        margin: 0;
+    }
+    
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem;
+    }
+
+    main h1 {
+        grid-column: 1/4;
+        text-align: left;
+        margin-bottom: .1rem;
+    }
+
+    #learning-act {
+        grid-column: 1/3;
+    }
+
+    #info {
+        grid-column: 3/4;
+    }
+
+    .card {
+        box-shadow: 2px 3px 8px rgba(29, 29, 29, 0.3);
+        margin: 1rem;
+    }
+
+    .card ul, p {
+        padding: 2rem;
+    }
+
+}
