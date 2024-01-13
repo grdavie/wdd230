@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: 'Martel Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     box-sizing: border-box;
     text-align: center;
 }
@@ -11,8 +11,8 @@ header, nav, main, footer {
 }
 
 header {
-    background-color: #DBEEB8;
-    color: #312E1B;
+    background-color: #015D7F;
+    color: white;
     text-align: center;
     display: flex;
     align-items: center;
@@ -22,16 +22,16 @@ header {
 }
 
 header img {
-    box-shadow: 1px 2px 8px rgba(29, 29, 29, 0.3);
+    box-shadow: 3px 4px 8px rgba(214, 209, 209, 0.3);
     margin-right: 15px;  
 }
 
 header span {
-    font-family: 'Bitter', 'serif';
+    font-family: 'DM Serif Display', 'serif';
 }
 
 nav {
-    background-color: #324E02;
+    background-color: #FFD15C;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav ul li {
 }
 
 nav a {
-    color: white;
+    color: #015D7F;
     text-decoration: none;
     display:block;
     text-align: center;
@@ -61,29 +61,30 @@ nav a:hover, .active a:hover {
 
 nav .active a {
     background-color: rgba(255, 255, 255, 0.6); 
-    color: #4A4629;
+    color: #24784A;
 }
 
 h1 {
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.8rem; 
     border-bottom: 2px dotted black;
     margin: 1.5rem;
-    font-family: 'Bitter', 'serif';
-    color: #312E1B;
+    font-family: 'DM Serif Display', 'serif';
+    color: #015D7F;
 }
 
 h2 {
-    color:#324E02;
+    color:#D07B0D;
+    font-family: 'DM Serif Display', 'serif';
 }
 
 h3 {
-    color:#3E6002;
+    color:#24784A;
     margin: 0;
 }
 
 p, ol {
-    color:#4F3303;
+    color: black;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 3rem;
@@ -98,7 +99,7 @@ ol {
 }
 
 a {
-    color:#3E6002
+    color:#53751E;
 }
 
 a:hover {
@@ -131,27 +132,30 @@ a:hover {
     color: white;
   }
   .accent2{
-    background-color: #86B33D;
+    background-color: #53751E;
+    color:white;
   }
   
   .accent3{
-    background-color: #F7991F;
+    background-color: #D07B0D;
   }
   
 #heading {
     font-family: 'DM Serif Display', serif;
     font-size: 1.8rem;
+    color:#015D7F
 }
 
 #paragraph {
     padding-top: .5rem;
     font-family: 'Raleway', sans-serif;
     font-size: 1.2rem;
+    color:#53751E;
 }
 
 footer {
-    background-color: #DBEEB8;
-    color: #312E1B;
+    background-color: #015D7F;
+    color: white;
     text-align: center;
     font-size: 1.2rem;
     padding: 1rem;
@@ -161,10 +165,11 @@ footer {
 footer p {
     margin: 0;
     padding: 0;
+    color: white;
 }
 
 #lastModified {
     font-size: 1rem;
-    color: #4F3303;
-    font-family: 'Bitter', 'serif';
+    color: #FFD15C;
+    font-family: 'DM Serif Display', 'serif';
 }
