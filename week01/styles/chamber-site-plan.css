@@ -153,6 +153,10 @@ a:hover {
     color:#53751E;
 }
 
+main img {
+    width: 45%;
+}
+
 footer {
     background-color: #015D7F;
     color: white;
