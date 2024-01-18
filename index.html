@@ -24,17 +24,19 @@
 
     <!--Social Media META tags-->
     <meta property="og:title" content="WDD 230 Course Portal">
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/23/13/22/adorable-1852815_1280.jpg">
     <meta property="og:url" content="https://grdavie.github.io/wdd230/">
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Gayle Reyna-Davie Profile" width="75" height="100">
+        <img src="images/profile.jpg" id="profile" alt="Gayle Reyna-Davie Profile" width="75" height="100">
         <span>Gayle Reyna-Davie</span>
+        <img src="images/dark-mode.svg" alt="dark mode" id="darkBtn">
     </header>
     <nav>
-        <ul>
+        <button id="menu"></button>
+        <ul class="navigation">
             <li class="active"><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li> <!-- why not working??? -->
@@ -64,5 +66,7 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/dark-mode.js"></script>
 </body>
 </html>
