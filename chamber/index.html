@@ -29,19 +29,21 @@
     <meta property="og:url" content="https://grdavie.github.io/wdd230/chamber">
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="images/ic-logo.png" id="logo" alt="Ipswich Chamber of Commerce Logo" width="250"></a>
-    </header>
-    <nav>
-        <button id="menu" title="Menu"></button>
-        <ul class="navigation">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Discover</a></li> 
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Join</a></li>
-        </ul>
-    </nav>
+    <div id="container">
+        <header>
+            <a href="index.html"><img src="images/ic-logo.png" id="logo" alt="Ipswich Chamber of Commerce Logo" width="250"></a>
+        </header>
+        <nav>
+            <button id="menu" title="Menu"></button>
+            <ul class="navigation">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Discover</a></li> 
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+        </nav>
+    </div>
     <!--Hero Section-->
     <div id="hero">
         <div id="hero-box">
@@ -67,7 +69,7 @@
             <img src="images/event-placeholder.jpg" alt="Event placeholder">
             <img src="images/event-placeholder.jpg" alt="Event placeholder">
             <div class="button-box">
-                <a class="discoverBtn" href="#">Read More</a>
+                <a class="discoverBtn" href="#">All Events</a>
             </div>
         </section>
         <div class="background-2"></div>
@@ -101,9 +103,10 @@
                 <img src="images/yt.png" alt="Youtube icon">
             </a>
         </div>
-        <p id="contact-link"><a href="#">Contact</a></p>
-        <p id="join-link"><a href="#">Join</a></p>
-        <img src="images/ic-logo.png" alt="Ipswich Chamber of Commerce Small Logo" width="180">
+        <div class="socials">
+            <p><a href="#" id="contact-link">Contact</a> <a href="#" id="join-link">Join</a></p>
+        </div>
+        <img id="logo-small" src="images/ic-logo-small.png" alt="Ipswich Chamber of Commerce Small Logo" width="180">
         <p id="copyright">&copy;<span id="year"></span> Gayle Reyna-Davie WDD 230 Chamber Project | Last Modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js"></script>
