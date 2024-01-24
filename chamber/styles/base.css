@@ -111,6 +111,10 @@ header {
     opacity: 90%;
 }
 
+#hero-box:hover {
+    filter: brightness(50%)
+}
+
 #hero-msg {
     padding: 1rem;
     text-align: center;
