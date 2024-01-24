@@ -4,9 +4,15 @@ body {
 }
 
 header, nav, #hero, main, footer {
-    max-width: 640px;
+    max-width: 900px;
     margin: 0;
 }
+
+#logo {
+    margin-left: .5rem;
+    margin-top: .5rem;
+}
+
 
 header {
     display: flex;
@@ -154,10 +160,6 @@ header {
     margin-top: 50px;
 }
 
-.background, .background-2 {
-    display: none;
-}
-
 #weather, #current, #spotlight {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -186,7 +188,7 @@ h2 {
 }
 
 #weather h2, #contact-home h2 {
-    color: #D07B0D;
+    color: #c0710b;
 }
 
 #current h2 {
