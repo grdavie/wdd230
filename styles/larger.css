@@ -1,5 +1,8 @@
 @media screen and (min-width: 500px) {
 
+    #content {
+        max-width: 2300px;
+    }
     
     header, nav, main, footer {
         max-width: 100%;
