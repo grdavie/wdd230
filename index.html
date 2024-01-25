@@ -30,7 +30,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" id="profile" alt="Gayle Reyna-Davie Profile" height="100">
+        <img src="images/profile.webp" id="profile" alt="Gayle Reyna-Davie Profile" height="100">
         <span>Gayle Reyna-Davie</span>
         <img src="images/dark-mode.svg" alt="dark mode" id="darkBtn">
     </header>
@@ -43,6 +43,15 @@
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+    <div class="hero">
+        <picture>
+            <source media="(max-width:400px)" srcset="images/manila-temple-small.webp">
+            <img src="images/manila-temple-large.webp" alt="Manila Philippines Temple" width="960">
+        </picture>
+        <div class="hero-label">
+            <p>Manila Philippines Temple</p>
+        </div>
+    </div>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
         <section class="card" id="learning-act">
@@ -50,7 +59,7 @@
             <ul>
                 <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="https://codepen.io/grdavie/pen/PoLzEYo">JS Pen</a></li>
                 <li>Week 02: <a href="week02/design.html">Design</a> | <a href="https://codepen.io/grdavie/pen/abMJQoX">Hamburger Menu</a> | <a href="week02/bom.html">BOM Top 10</a> </li>
-                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading</a> | <a href="week03/responsive-images.html">Responsive Images</a> </li>
+                <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> | <a href="week03/lazyload.html">Lazy Loading</a> | <a href="week03/responsive-images.html">Responsive Images</a> | <a href="week03/bom.html">BOM localStorage</a></li>
                 <li>Week 04:</li>
                 <li>Week 05:</li>
                 <li>Week 06:</li>
@@ -60,6 +69,9 @@
             <h2>Information</h2>
             <p>Weather information will go here</p>
         </section>
+        <div id="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3866.3648077078756!2d120.97491364121356!3d14.290224001198533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sau!4v1706152004160!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
     <footer>
         <p>&copy;<span id="year"></span> | Gayle Reyna-Davie | Australia 🇦🇺</p>

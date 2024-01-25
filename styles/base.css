@@ -2,6 +2,7 @@ body {
     background-color: white;
     font-family: 'Martel Sans', sans-serif;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body.dark {
@@ -196,3 +197,41 @@ footer p {
     font-family: 'Bitter', 'serif';
 }
 
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-label {
+	position: absolute;
+	top: 50px;
+	background: white;
+	padding: 1rem;
+	opacity: 0.75;
+    width: 100%;
+}
+
+.hero-label p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Bitter", serif;
+    font-style: italic;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    padding: 1rem;
+    max-height: 300px;
+}
+
+#container {
+    padding-left: 1rem;
+    padding-right: 3rem;
+}
