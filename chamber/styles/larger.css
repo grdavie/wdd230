@@ -18,6 +18,7 @@
         margin-top: .5rem;
     }
 
+
     #hero-img {
         max-width: 100%;
         object-fit: cover;
@@ -26,7 +27,6 @@
 
     #hero-box {
         max-height: 600px;
-        margin-top: -2rem;
     }
 
     #menu {
@@ -85,7 +85,7 @@
         z-index: 1;
         background-color: rgb(240, 240, 240);
         height: 300px;
-        margin-top: 0;
+        margin-top: -20px;
         padding: 2rem;
     }
 
