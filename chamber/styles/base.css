@@ -101,6 +101,7 @@ header {
    position: relative;
    overflow: hidden;
    min-height: 650px;
+   background-color: black;
 }
 
 #hero-img {
