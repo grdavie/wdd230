@@ -208,7 +208,7 @@ footer p {
 
 .hero-label {
 	position: absolute;
-	top: 50px;
+	top: 100px;
 	background: white;
 	padding: 1rem;
 	opacity: 0.75;
@@ -234,4 +234,9 @@ iframe {
 #container {
     padding-left: 1rem;
     padding-right: 3rem;
+}
+
+
+#info p {
+    padding-bottom: 0;
 }
