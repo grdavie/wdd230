@@ -5,6 +5,7 @@ body {
 header, nav, #hero, main, footer {
     max-width: 900px;
     margin: 0;
+    overflow: hidden;
 }
 
 #logo {
@@ -234,6 +235,92 @@ h2 {
 .button-box:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+/*Discover Page*/
+
+.discover-grid {
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 1rem;
+}
+
+.sidebar {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem;
+    text-align: center;
+    max-height: fit-content;
+}
+
+.sidebar h2 {
+    border-bottom: 2px dotted #015D7F;
+    padding-bottom: 1rem;
+}
+
+.sidebar img {
+    padding-bottom: 1.2rem;
+    width: 100%;
+    height: auto;
+    max-width: 450px;
+}
+
+.local h2 {
+    color: #015D7F;
+    border-bottom: 2px dotted #015D7F;
+    padding-bottom: 1rem;
+}
+
+#town-info h2{
+    color: #24784a;
+}
+
+.local {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.local-box {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.local-box img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.local-box h3 {
+    font-size: 1.8rem;
+    color: #015D7F;
+}
+
+.local-box p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.local-box a {
+    color: #015D7F;
+}
+
+.local-box a:hover {
+    font-weight: bold;
+    color: #c0710b;
+}
+
+#message {
+    padding-bottom: 0;
+    font-style: italic;
+    color: #53751E;
+}
+
+#event-posters h2 {
+    color:#53751E;
+}
+
 
 footer {
     background-color: #015D7F;

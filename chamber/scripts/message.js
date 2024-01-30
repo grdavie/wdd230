@@ -5,22 +5,28 @@ function calculateDays(currentTime, lastVisit) {
 }
 
 function displayMessage() {
-    const message = document.getElementById('messageTxt');
+    const message = document.getElementById('message');
     const currentTime = Date.now();
     const lastVisit = localStorage.getItem('lastVisit');
 
+    //create an h2 element inside message
+    const h2 = document.createElement('h2');
+
     if (!lastVisit) {
-        message.textContent = "Welcome! Let us know if you have any questions. "
+        h2.textContent = "Welcome! Let us know if you have any questions. "
     } else {
         const daysDifference = calculateDays(currentTime, lastVisit);
 
         if (daysDifference < 1) {
-            message.textContent = "Back so soon! Awesome!";
+            h2.textContent = "Back so soon! Awesome!";
         } else {
             const plural = daysDifference === 1 ? '' : 's';
-            message.textContent = `You last visited ${daysDifference} day${plural} ago.`;
+            h2.textContent = `You last visited ${daysDifference} day${plural} ago.`;
         }
     }
+
+    //append h2 element to message
+    message.appendChild(h2);
 
     localStorage.setItem('lastVisit', currentTime);
 }
