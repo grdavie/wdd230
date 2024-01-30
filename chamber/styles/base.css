@@ -283,6 +283,16 @@ h2 {
     padding-bottom: 1rem;
 }
 
+.local h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #015D7F;
+    background-color: #FFD15C;
+    padding: 1.2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
 .local-box {
     text-align: center;
     padding: 1.5rem;
