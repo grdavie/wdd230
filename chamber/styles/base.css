@@ -264,10 +264,12 @@ h2 {
     max-width: 450px;
 }
 
-.local h2 {
+.local h1 {
     color: #015D7F;
     border-bottom: 2px dotted #015D7F;
     padding-bottom: 1rem;
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 3rem;
 }
 
 #town-info h2{
