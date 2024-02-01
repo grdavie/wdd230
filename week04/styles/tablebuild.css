@@ -1,0 +1,53 @@
+:root {
+   --border: hsla(0, 1%, 25%, 0.8);
+   --zebra: hsl(0, 0%, 93%, 1);
+   --bg: black;
+   --bg2: rgb(47, 46, 46);
+   --head: rgb(255, 247, 247);
+   --borderlight: hsla(0,0%,33%,.3);
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    font-size: 1rem;
+}
+
+tr:first-child th, .highlight, th {
+    background-color: var(--bg);
+    color: var(--head);
+    font-size: 1.8rem;
+    padding: 1.5rem;
+}
+
+th {
+    background-color: var(--bg2);
+    color: var(--head);
+    font-size: 1.5rem;
+}
+
+th, td {
+    padding: 10px 20px;
+    border: 1px solid var(--borderlight);
+}
+
+td {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--zebra);
+}
+
