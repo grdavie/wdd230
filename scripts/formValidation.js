@@ -47,8 +47,19 @@ function validateEmailWithDomain(email, allowedDomain) {
 //rating
 const rangeValue = document.getElementById('rangevalue');
 const range = document.getElementById('rating');
+const rangeValues = document.getElementById('rangevalues');
+
+//sliding
 range.addEventListener('change', displayRatingValue);
 range.addEventListener('input', displayRatingValue);
+
+//clicking the number
+rangeValues.addEventListener('click', function(event) {
+    if (event.target.tagName === 'OPTION') {
+        range.value = event.target.value;
+        displayRatingValue();
+    }
+});
 
 function displayRatingValue() {
     rangeValue.innerHTML = range.value;
