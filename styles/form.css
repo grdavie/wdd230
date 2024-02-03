@@ -110,7 +110,7 @@ input[type=range] {
 
 #rangevalues {
     display: flex;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 20px;
     max-width: 25rem;
     width: 100%;
 }
