@@ -1,0 +1,128 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+    --bgcolor: #dbeeb83f;
+    --border: #324E02;
+    --borderlight: #999;
+    --green: #324E02;
+    --brown: #312E1B;
+    --lgreen: #506230;
+    --red: rgb(219, 37, 37);
+}
+
+/*-----FORM------*/
+
+form fieldset {
+    margin: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+form legend {
+    color: var(--green);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+    font-family: 'Bitter', serif;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: var(--brown);
+    font-size: .8rem;
+}
+
+form label.top input {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px var(--borderlight);
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    max-width: 25rem;
+    width: 100%;
+    background-color: var(--bgcolor);
+    margin-bottom: .5rem;
+}
+
+.required {
+    padding-bottom: 1rem;
+    font-size: .8rem;
+    color:var(--red);
+}
+
+form label.top span.note {
+    font-style: italic;
+    color: var(--red);
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--green);
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 1rem 1.5rem;
+    width: 96%;
+    max-width: 25rem;
+}
+
+form input.submitBtn:hover {
+    cursor: pointer;
+    background-color: var(--lgreen)
+}
+
+form label.top input:required {
+    border-left: rgb(219, 37, 37) solid 6px;
+
+}
+
+form label.top input:required:valid {
+    border-left: rgb(10, 196, 10) solid 6px;
+}
+
+input[type=range] {
+    margin: 1rem;
+    padding: 0.5em;
+}
+
+#rating {
+    max-width: 25rem;
+    width: 100%;
+    margin: .5rem;
+}
+
+#rating:hover {
+    cursor: pointer;
+}
+
+#rangevalue {
+    font-size: 2rem;
+    color: var(--green);
+}
+
+#rangevalues {
+    display: flex;
+    margin: 0 0 0 25px;
+    max-width: 25rem;
+    width: 100%;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}
+
+#p-validation, #e-validation {
+    color:rgb(219, 37, 37);
+}
+
+#record-msg {
+    text-align: center;
+}

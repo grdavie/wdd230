@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Standard META tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayle Reyna-Davie - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="This site is the WDD 230 - Web Frontend Development course assignment portal for Gayle Reyna-Davie, the central hub for all the tasks and projects essential for course completion.">
+    <meta name="author" content="Gayle Reyna-Davie">
+    
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!--Or use href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" to minimize the normalize.css file-->
+
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/larger.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;1,300;1,400&family=Martel+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="icon" href="gr.ico">
+
+    <!--Social Media META tags-->
+    <meta property="og:title" content="WDD 230 Course Portal">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.pixabay.com/photo/2016/11/23/13/22/adorable-1852815_1280.jpg">
+    <meta property="og:url" content="https://grdavie.github.io/wdd230/">
+</head>
+<body>
+    <header>
+        <img src="images/profile.webp" id="profile" alt="Gayle Reyna-Davie Profile" height="100" width="72">
+        <span>Gayle Reyna-Davie</span>
+        <img src="images/dark-mode.svg" alt="dark mode" id="darkBtn">
+    </header>
+    <nav>
+        <button id="menu" title="Menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li> <!-- why not working??? -->
+            <li class="active"><a href="form.html">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form id="myForm" method="get" action="record.html">
+        
+        <fieldset id="account">
+            <legend>Create an Account</legend>
+            <div class="required">*Required fields</div>
+            <label class="top">Username<span class="note">*</span><input type="text" id="username" name="username" placeholder="Please enter a username" required></label>
+            <label class="top">Password <span class="note">(alphanumeric, no special characters)*</span><input type="password" id="password" name="password" pattern="[a-zA-z0-9]{8,}" placeholder="At least 8 characters" title="Please enter a valid password" required></label>
+            <label class="top">Re-enter Password<span class="note">*</span><input type="password" id="password2" name="password2" pattern="[a-zA-z0-9]{8,}" placeholder="Re-enter your password" title="Re-enter your password" required></label>
+            <div id="p-validation"></div>
+            <label class="top">E-mail <span class="note">(byui.edu domain only)*</span><input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="your-email@byui.edu" title="Please enter a valid email address" required></label>
+            <div id="e-validation"></div>
+        </fieldset>
+
+        <fieldset id="rate">
+            <legend>Rate the Page</legend>
+            <label class="top">Your Rating: </label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues" title="Page rating slider">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+        </fieldset>
+
+        <input type="submit" value="Create My Account" class="submitBtn">
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Gayle Reyna-Davie | Australia 🇦🇺</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/vcount.js"></script>
+    <script src="scripts/formValidation.js"></script>
+</body>
+</html>
