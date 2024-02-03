@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Ipswich Chamber of Commerce</title>
+    <title>Join - Ipswich Chamber of Commerce</title>
     <meta name="description" content="Connect, grow, and thrive in Ipswich with the Chamber of Commerce. Stay updated on events, explore local businesses, and discover our vibrant community.">
     <meta name="author" content="Gayle Reyna-Davie">
 
@@ -36,54 +36,62 @@
         <nav>
             <button id="menu" title="Menu"></button>
             <ul class="navigation">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="#">Directory</a></li> 
                 <li><a href="#">Contact</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </div>
-    <!--Hero Section-->
-    <div id="hero">
-        <div id="hero-box">
-            <img src="images/hero-image.jpg" id="hero-img" alt="Making Connections">
-        </div>
-        <section id="hero-msg">
-            <h1>Ipswich Chamber of Commerce</h1>
-            <h2>CONNECT | GROW | THRIVE <br> Unlock exciting opportunities for growth by joining our Chamber!</h2>
-            <div class="button-box" id="join-Btn">
-                <a class="joinBtn" href="#">Join Now</a>
-            </div>
-        </section>    
-    </div>
-    <main class="home-grid">
-        <section id="weather">
-            <h2>Weather</h2>
-            <h3>Weather information goes here</h3>
+    <main class="join-grid">
+        
+        <h1>Become a Member of the Ipswich Chamber of Commerce</h1>
+        <h2>Our mission is to strengthen and advance business in the region!</h2>
+
+        <form id="join" method="get" action="thankyou.html">
+        <div class="instruct">Complete the Application to Join Us</div>
+        <!--Applicant Information-->
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <div class="required">*Required fields</div>
+
+            <label class="top">First Name<span class="req-note">*</span><input type="text" id="fname" name="fname" required></label>
+            <label class="top">Last Name<span class="req-note">*</span><input type="text" id="lname" name="lname" required></label>
+            <label class="top">Title or Position<span class="req-note"> (letters, -, & spaces only)</span><input type="text" id="position" name="position" pattern="[a-zA-Z -]{7,}" placeholder="At least 7 characters"></label>
+            <label class="top">E-mail Address<span class="req-note">*</span><input type="email" id="email" name="email" required placeholder="your-email@domain.com"></label>
+            <label class="top">Mobile Number<span class="req-note">*</span><input type="tel" id="mobile" name="mobile" required></label>
+        </fieldset>
+
+        <!--Business Information-->
+        <fieldset>
+            <legend>Business or Organisation Details</legend>
+
+            <label class="top">Business/Organisation Name<span class="req-note">*</span><input type="text" id="bname" name="bname" required></label>
+            
+            <div class="membership">Membership Level</div>
+            <label class="sbs"><input type="radio" name="level" value="np"> NP Membership</label>
+            <label class="sbs"><input type="radio" name="level" value="brozne"> Bronze Membership</label>
+            <label class="sbs"><input type="radio" name="level" value="silver"> Silver Membership</label>
+            <label class="sbs"><input type="radio" name="level" value="gold"> Gold Membership</label>
+            
+            <!--Add JS to limit word input-->
+            <label class="top">Business/Organisation Description<textarea id="desc" name="desc" placeholder="Tell us about your business or organisation in less than 50 words."></textarea></label>
+            
+            <!--Timestamp Info-->
+            <input type="hidden" id="timestamp" name="timestamp">
+
+        </fieldset>
+
+        <input type="submit" value="Join the Chamber" class="submitBtn">
+
+        </form>
+
+        <!--Membership Benefits table-->
+        <section class="benefits">
+            <h2>Membership Levels and Benefits</h2>
         </section>
-        <section id="current">
-            <h2>Discover the Latest</h2>
-            <div class="image-container">
-                <img src="images/event-placeholder.webp" alt="Event placeholder" loading="lazy">
-                <img src="images/event-placeholder.webp" alt="Event placeholder" loading="lazy">
-                <img src="images/event-placeholder.webp" alt="Event placeholder" loading="lazy">
-            </div>
-            <div class="button-box">
-                <a class="discoverBtn" href="#">View More</a>
-            </div>
-        </section>
-        <section id="spotlight">
-            <h2>Partners Spotlight</h2>
-            <h3>Ads Carousel Goes here</h3>
-        </section>
-        <section id="contact-home">
-            <h2>Interested in Learning More About the Chamber?</h2>
-            <h3>Ask questions or reach out to us!</h3>
-            <div class="button-box">
-                <a class="contactBtn" href="#">Contact Us</a>
-            </div>
-        </section>
+
     </main>
     <footer>
         <div class="socials-container">

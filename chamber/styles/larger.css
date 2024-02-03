@@ -1,5 +1,15 @@
 @media screen and (min-width: 900px) {
 
+    :root {
+        --primary: #015D7F;
+        --secondary: #FFD15C;
+        --accent1: #24784A;
+        --accent2: #53751E;
+        --accent3: #D07B0D; 
+        --drk3: #c0710b;
+        --bgcolor: rgb(240, 240, 240);
+        --bgcolor2: rgba(239, 244, 252, 0.75);  
+    }
     
     header, nav, #hero, main, footer {
         max-width: 100%;
@@ -37,7 +47,7 @@
 	.navigation {
 		flex-direction: row;
         background-color: white;
-        color: #015d7f;
+        color: var(--primary);
         padding: 1rem;
         margin-right: 1rem;
 	}
@@ -48,18 +58,18 @@
 	}
 
     .navigation li a {
-        color:#015d7f;
+        color:var(--primary);
     }
 
     .navigation li.active a {
         background-color: white;
-        color: #24784A;
+        color: var(--accent1);
         font-style: italic;
         font-weight: 600;
     }
 
     .navigation li.active a:hover {
-        color: #015D7F;
+        color: var(--primary);
         font-weight: 700;
     }
 
@@ -84,7 +94,7 @@
         grid-column: 1/11;
         grid-row: 1/4;
         z-index: 1;
-        background-color: rgb(240, 240, 240);
+        background-color: var(--bgcolor);
         height: 300px;
         margin-top: -20px;
         padding: 2rem;
@@ -113,7 +123,7 @@
 
     #spotlight {
         grid-column: 1/11;
-        background-color: rgb(240, 240, 240);
+        background-color: var(--bgcolor);
         margin-top: 5rem;
         height: 500px;
         padding: 1rem;
@@ -238,4 +248,13 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
+    /*Join Page*/
+    form label.top input {
+        width: 100%;
+    }
+
+    .instruct {
+        text-align: left;
+        margin: 1.5rem;
+    }
 }

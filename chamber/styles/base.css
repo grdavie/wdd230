@@ -1,3 +1,16 @@
+:root {
+    --primary: #015D7F;
+    --secondary: #FFD15C;
+    --accent1: #24784A;
+    --accent2: #53751E;
+    --accent3: #D07B0D; 
+    --drk3: #c0710b;
+    --borderlight: #999;
+    --bgcolor: rgb(240, 240, 240); 
+    --bgcolor2: rgba(239, 244, 252, 0.75);  
+    --required: rgb(219, 37, 37);
+}
+
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -40,7 +53,7 @@ header {
 	border: none;
 	padding: .5rem;
 	background-color: white;
-	color: #015D7F;
+	color: var(--primary);
     cursor:pointer;
     position: absolute;
     top: 2rem;
@@ -60,7 +73,7 @@ header {
     display: flex;
     flex-direction: column;
     list-style: none;
-    background-color: #015D7F;
+    background-color: var(--primary);
     color: white;
     padding: 0;
     margin: 0;
@@ -82,7 +95,7 @@ header {
 
 .navigation li a:hover {
     background-color: rgba(255,255,255,0.8);
-    color: #015D7F;
+    color: var(--primary);
 	font-weight: 700;
 }
 
@@ -144,11 +157,11 @@ header {
 
 .button-box {
     text-decoration: none;
-    color: #015D7F;
+    color: var(--primary);
     font-size: 1.2rem;
     padding: 15px 30px;
     border-radius: 5px;
-    background-color: #FFD15C;
+    background-color: var(--secondary);
     text-shadow: none;
     cursor: pointer;
     width: 120px;
@@ -158,7 +171,7 @@ header {
 
 .button-box a {
     text-decoration: none;
-    color: #015D7F;
+    color: var(--primary);
     font-weight: bold;
 }
 
@@ -207,15 +220,15 @@ h2 {
 }
 
 #weather h2, #contact-home h2 {
-    color: #c0710b;
+    color: var(--drk3);
 }
 
 #current h2 {
-    color: #53751E;
+    color: var(--accent2);
 }
 
 #spotlight h2 {
-    color: #015D7F
+    color: var(--primary);
 }
 
 #current, #spotlight {
@@ -246,14 +259,14 @@ h2 {
 }
 
 .sidebar {
-    background-color: rgb(240, 240, 240);
+    background-color: var(--bgcolor);
     padding: 1rem;
     text-align: center;
     max-height: fit-content;
 }
 
 .sidebar h2 {
-    border-bottom: 2px dotted #015D7F;
+    border-bottom: 2px dotted var(--primary);
     padding-bottom: 1rem;
 }
 
@@ -265,15 +278,15 @@ h2 {
 }
 
 .local h1 {
-    color: #015D7F;
-    border-bottom: 2px dotted #015D7F;
+    color: var(--primary);
+    border-bottom: 2px dotted var(--primary);
     padding-bottom: 1rem;
     font-family: 'DM Serif Display', sans-serif;
     font-size: 3rem;
 }
 
 #town-info h2{
-    color: #24784a;
+    color: var(--accent1);
 }
 
 .local {
@@ -286,8 +299,8 @@ h2 {
 .local h2 {
     font-size: 1.5rem;
     font-style: italic;
-    color: #015D7F;
-    background-color: #FFD15C;
+    color: var(--primary);
+    background-color: var(--secondary);
     padding: 1.2rem;
     margin: 0;
     margin-bottom: 1rem;
@@ -306,7 +319,7 @@ h2 {
 
 .local-box h3 {
     font-size: 1.8rem;
-    color: #015D7F;
+    color: var(--primary);
 }
 
 .local-box p {
@@ -315,27 +328,129 @@ h2 {
 }
 
 .local-box a {
-    color: #015D7F;
+    color: var(--primary);
 }
 
 .local-box a:hover {
     font-weight: bold;
-    color: #c0710b;
+    color: var(--drk3);
 }
 
 #message {
     padding-bottom: 0;
     font-style: italic;
-    color: #53751E;
+    color: var(--accent2);
 }
 
 #event-posters h2 {
-    color:#53751E;
+    color:var(--accent2);
+}
+
+/*Join*/
+.instruct {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--primary);
+    margin: 1.5rem 5rem;
+    font-style: italic;
+    padding: 1rem;
+}
+
+form fieldset {
+    margin: 1.5rem;
+    border: 1px dotted var(--primary);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+}
+
+form legend {
+    color: var(--primary);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 1.2rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+form label.top input, textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1.2rem;
+    font-style: italic;
+    border: solid 1px var(--borderlight);
+    border-radius: 4px;
+    padding: .75rem;
+    color: var(--primary);
+    max-width: 25rem;
+    width: 90%;
+    background-color: var(--bgcolor2);
+    margin-bottom: .5rem;
+
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    margin-left: 1rem;
+    color: var(--primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+input[type=radio] {
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: var(--required) solid 6px;
+
+}
+
+form label.top input:required:valid {
+    border-left: var(--accent2) solid 6px;
+}
+
+.membership {
+    padding-top: 1rem;
+}
+
+.required {
+    font-size: .8rem;
+    color: var(--required);
+}
+
+.req-note {
+    font-style: italic;
+    color: var(--required);
+}
+
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--secondary);
+    color: var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem;
+    text-align: center;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 1.8rem;
+}
+
+.submitBtn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 
 footer {
-    background-color: #015D7F;
+    background-color: var(--primary);
     margin-top: 1.5rem;
     padding: 1.5rem;
     display: flex;
@@ -370,7 +485,7 @@ footer {
 }
 
 .socials a:hover {
-    color:#FFD15C;
+    color:var(--secondary);
     font-weight: 600;
 }
 
