@@ -60,7 +60,7 @@
             <label class="top">Last Name<span class="req-note">*</span><input type="text" id="lname" name="lname" required></label>
             <label class="top">Title or Position<span class="req-note"> (letters, -, & spaces only)</span><input type="text" id="position" name="position" pattern="[a-zA-Z -]{7,}" placeholder="At least 7 characters"></label>
             <label class="top">E-mail Address<span class="req-note">*</span><input type="email" id="email" name="email" required placeholder="your-email@domain.com"></label>
-            <label class="top">Mobile Number<span class="req-note">*</span><input type="tel" id="mobile" name="mobile" required></label>
+            <label class="top">Mobile Number<span class="req-note">*</span><input type="tel" id="mobile" name="mobile" pattern="^\+?[0-9]+$" required></label>
         </fieldset>
 
         <!--Business Information-->
@@ -76,7 +76,8 @@
             <label class="sbs"><input type="radio" name="level" value="gold"> Gold Membership</label>
             
             <!--Add JS to limit word input-->
-            <label class="top">Business/Organisation Description<textarea id="desc" name="desc" placeholder="Tell us about your business or organisation in less than 50 words."></textarea></label>
+            <label class="top">Business/Organisation Description<textarea id="desc" name="desc" placeholder="Tell us about your business or organisation."></textarea></label>
+            <div class="charCount">Characters remaining: <span id="count">500</span></div>
             
             <!--Timestamp Info-->
             <input type="hidden" id="timestamp" name="timestamp">
@@ -121,5 +122,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/limitWords.js" defer></script>
 </body>
 </html>

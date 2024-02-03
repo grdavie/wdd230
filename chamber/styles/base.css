@@ -448,6 +448,10 @@ form input.submitBtn {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.charCount {
+    font-size: .8rem;
+    color: #555;
+}
 
 footer {
     background-color: var(--primary);
