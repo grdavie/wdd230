@@ -346,18 +346,102 @@ h2 {
     color:var(--accent2);
 }
 
-/*Join*/
-.instruct {
+/*Join - Table*/
+
+.join-head h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
     color: var(--primary);
-    margin: 1.5rem 5rem;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 1.5rem;
+    border-bottom: 2px dotted var(--primary);
+    margin-bottom: 2rem;
+}
+
+.benefits {
+    overflow-x: auto;
+    max-width: 100%;
+    margin-bottom: 3rem;
+}
+
+.benefits h2 {
+    margin: 1.5rem 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: var(--secondary);
+    color: var(--primary);
     font-style: italic;
+}
+
+.benefits p, h3 {
+    margin: 1.5rem;
+    text-align: center;
     padding: 1rem;
 }
 
-form fieldset {
+.benefits h3 {
+    color: var(--primary);
+}
+
+#mem-table {
     margin: 1.5rem;
+    border: 1px dotted var(--primary);
+    border-collapse: collapse;
+    min-width: 550px;
+}
+
+caption {
+    padding: 1.5rem;
+    caption-side: top;
+    font-size: 1.8rem;
+    color: var(--drk3);
+    font-family: 'DM Serif Display', serif;
+}
+
+tr:first-child th, .highlight {
+    background-color: var(--accent1);
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+
+th {
+    background-color: var(--accent2);
+    color:white;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+th, td {
+    width: 25%;
+    word-break: break-word;
+    box-sizing: border-box;
+    padding: 1rem .5rem;
+    border: 1px solid rgb(192, 192, 192);
+    margin: .4rem;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: var(--bgcolor2);
+}
+
+
+
+
+/*Join - Form*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form fieldset {
+    margin: .8rem 1.5rem;
     border: 1px dotted var(--primary);
     border-radius: 8px;
     padding: 1rem;
@@ -369,6 +453,7 @@ form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
     font-size: 1.2rem;
+    background-color: white;
 }
 
 form label.top {
@@ -386,10 +471,11 @@ form label.top input, textarea {
     border-radius: 4px;
     padding: .75rem;
     color: var(--primary);
-    max-width: 25rem;
-    width: 90%;
+    max-width: 90%;
+    width: 100%;
     background-color: var(--bgcolor2);
     margin-bottom: .5rem;
+    
 
 }
 
@@ -437,12 +523,14 @@ form input.submitBtn {
     color: var(--primary);
     border-radius: 5px;
     cursor: pointer;
-    margin: 1rem;
+    margin: 1rem auto;
     text-align: center;
     padding: 15px 30px;
     font-size: 1.2rem;
     cursor: pointer;
-    margin-left: 1.8rem;
+    width: auto;
+    font-weight: bold;
+    
 }
 
 .submitBtn:hover {
@@ -452,6 +540,26 @@ form input.submitBtn {
 .charCount {
     font-size: .8rem;
     color: #555;
+}
+
+/*Thank You Page*/
+.ty-grid {
+    text-align: center;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.ty-grid h2 {
+    color: var(--accent3);
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.ty-grid h1 {
+    color: var(--primary);
+    font-style: italic;
+    font-family: 'DM Serif Display', serif;
+    font-size: 3rem;
 }
 
 footer {

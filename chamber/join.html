@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Join - Ipswich Chamber of Commerce</title>
-    <meta name="description" content="Connect, grow, and thrive in Ipswich with the Chamber of Commerce. Stay updated on events, explore local businesses, and discover our vibrant community.">
+    <meta name="description" content="Become a Member of the Ipswich Chamber of Commerce - Complete the Application to Join">
     <meta name="author" content="Gayle Reyna-Davie">
 
      <!--Normalise-->
@@ -23,7 +23,7 @@
     <link rel="icon" href="ic.ico">
 
     <!--Social Media META tags-->
-    <meta property="og:title" content="Ipswich Chamber of Commerce">
+    <meta property="og:title" content=" Join the Ipswich Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg">
     <meta property="og:url" content="https://grdavie.github.io/wdd230/chamber">
@@ -46,11 +46,104 @@
     </div>
     <main class="join-grid">
         
-        <h1>Become a Member of the Ipswich Chamber of Commerce</h1>
-        <h2>Our mission is to strengthen and advance business in the region!</h2>
+        <section class="join-head">
+            <h1>Become a Member of the Ipswich Chamber of Commerce</h1>
+        </section>
+
+        <!--Membership Benefits table-->
+        <section class="benefits">
+
+            <h2>Our mission is to strengthen and advance business in the region</h2>
+            <p>The <strong>NP Membership</strong> is designed for non-profit organizations and provides basic benefits without any membership fee. 
+                If you're looking for an entry-level membership, the <strong>Bronze</strong> level offers increased exposure and access to events and training. 
+                <br><br>For a popular choice with enhanced benefits, including more special events and advanced advertising, consider the <strong>Silver</strong> membership. 
+                Finally, the <strong>Gold</strong> membership is the premium level that comes with extensive benefits, VIP access, and premium advertising opportunities.</p>
+            
+            <h3>Complete the application form to become a part of our Chamber and enjoy all of our member benefits from Day 1! </h3>
+
+
+            <table id="mem-table">
+                <caption>Membership and Annual Benefits</caption>
+                <thead>
+                    <tr>
+                        <th colspan="4" scope="colgroup">Membership Level</th>
+                    </tr>
+                    <tr>
+                        <th scope="col">🍃 Non-Profit (NP)</th>
+                        <th scope="col">🌱 Bronze</th>
+                        <th scope="col">🌿 Silver</th>
+                        <th scope="col">🪴 Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>No Fee</td>
+                        <td>$800/yr (tax deductible)</td>
+                        <td>$1500/yr (tax deductible)</td>
+                        <td>$2200/yr (tax deductible)</td>
+                    </tr>
+                    <tr>
+                        <td>Member coverage for 5 persons</td>
+                        <td>Member coverage for 15 persons</td>
+                        <td>Member coverage for 30 persons</td>
+                        <td>Member coverage for 50 persons</td>
+                    </tr>
+                    <tr>
+                        <td>1 Special Event attendance</td>
+                        <td>1 Special Event attendance</td>
+                        <td>2 Special Event attendance</td>
+                        <td>4 Special Event attendance</td>
+                    </tr>
+                    <tr>
+                        <td>Basic access to educational workshops</td>
+                        <td>Access to educational workshops, business, and training events</td>
+                        <td>Access to educational workshops, business, and training events (inc. post-event gatherings)</td>
+                        <td>Early-bird access to educational workshops, business, and training events (inc. post-event gatherings)</td>
+                    </tr>
+                    <tr>
+                        <td>Online members directory inclusion</td>
+                        <td>Online members directory inclusion <br><br>Promotion via events, newsletters and social media</td>
+                        <td>Online members directory inclusion (front page under Gold members) <br><br>Promotion via events, newsletters and social media <br><br>Spotlight advertising</td>
+                        <td>Online members directory inclusion (front page priority) <br><br>Promotion via events, newsletters and social media <br><br>Premium spotlight advertising</td>
+                    </tr>
+                    <tr>
+                        <td>No Newsletter Feature</td>
+                        <td>Bi-annual Newsletter feature</td>
+                        <td>Quarterly Newsletter feature</td>
+                        <td>Monthly Newsletter feature (including 1x double spread feature per year)</td>
+                    </tr>
+                    <tr>
+                        <td>5% Discount on Chamber Events</td>
+                        <td>10% Discount on Chamber Events</td>
+                        <td>15% Discount on Chamber Events</td>
+                        <td>20% Discount on Chamber Events</td>
+                    </tr>
+                    <tr>
+                        <td>Basic Networking Opportunities</td>
+                        <td>Basic Networking Opportunities</td>
+                        <td>Exclusive Networking Opportunities</td>
+                        <td>Exclusive Networking Opportunities (priority)</td>
+                    </tr>
+                    <tr>
+                        <td>Eligible for 1x Award-Nomination</td>
+                        <td>Eligible for 1x Award-Nomination</td>
+                        <td>Eligible for 3x Award-Nomination</td>
+                        <td>Eligible for 5x Award-Nomination</td>
+                    </tr>
+                    <tr>
+                        <td>No consultation</td>
+                        <td>2 hours of consultation services</td>
+                        <td>3 hours of consultation services</td>
+                        <td>5 hours of consultation services</td>
+                    </tr>
+                </tbody>
+            </table>               
+
+        </section>
+
+        <!--FORM-->
 
         <form id="join" method="get" action="thankyou.html">
-        <div class="instruct">Complete the Application to Join Us</div>
         <!--Applicant Information-->
         <fieldset>
             <legend>Applicant Information</legend>
@@ -83,15 +176,10 @@
             <input type="hidden" id="timestamp" name="timestamp">
 
         </fieldset>
-
+        
         <input type="submit" value="Join the Chamber" class="submitBtn">
 
         </form>
-
-        <!--Membership Benefits table-->
-        <section class="benefits">
-            <h2>Membership Levels and Benefits</h2>
-        </section>
 
     </main>
     <footer>

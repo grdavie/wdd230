@@ -18,3 +18,14 @@ function limitCharacters() {
 
 // Assuming you want to call this function on the 'input' event
 textArea.addEventListener('input', limitCharacters);
+
+//timestamp
+
+// Get the current timestamp
+const currentTimestamp = new Date().getTime();
+
+// Find the hidden input field by its ID
+const timestampInput = document.getElementById("timestamp");
+
+// Set the value of the hidden input field to the current timestamp
+timestampInput.value = currentTimestamp;
