@@ -29,3 +29,26 @@ const timestampInput = document.getElementById("timestamp");
 
 // Set the value of the hidden input field to the current timestamp
 timestampInput.value = currentTimestamp;
+
+//Validate the title/position input
+var positionInput = document.getElementById('position');
+var message = document.querySelector('#title-validation');
+
+  // Attach the focusout event listener
+positionInput.addEventListener('focusout', validatePosition);
+
+function validatePosition() {
+    // Access the value when needed
+    var positionValue = positionInput.value.trim();
+
+    // Check the pattern only if there is a value
+    if (positionValue !== '' && !/^[a-zA-Z -]{7,}$/.test(positionValue)) {
+      message.textContent = 'Please follow the required format.';
+      positionInput.focus(); // Keep the focus on the input for correction
+      return false; // Prevent form submission
+    } else {
+      message.textContent = ''; // Clear the validation message
+    }
+
+    return true; // Allow form submission if validation passes
+}
