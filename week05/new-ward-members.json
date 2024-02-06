@@ -1,0 +1,53 @@
+{
+ 
+    "newWardMembers": [
+        {
+
+            "familyName": "Davie",
+            "moveDate": "2023-03-14",
+            "numberOfPeople": 3,
+            "visitedByBishopric": true,
+            "familyMembers": [
+                {
+                    "name": "Jesse",
+                    "gender": "Male",
+                    "birthdate": "1997-12-08"
+                },
+                {
+                    "name": "Gayle",
+                    "gender": "Female",
+                    "birthdate": "1996-03-23"
+                },
+                {
+                    "name": "Roarke Koda",
+                    "gender": "Male",
+                    "birthdate": "2020-07-24"
+                }
+            ]
+        },
+        {
+
+            "familyName": "Forger",
+            "moveDate": "2023-06-12",
+            "numberOfPeople": 3,
+            "visitedByBishopric": false,
+            "familyMembers": [
+                {
+                    "name": "Loid",
+                    "gender": "Male",
+                    "birthdate": "1995-04-22"
+                },
+                {
+                    "name": "Yor",
+                    "gender": "Female",
+                    "birthdate": "1996-08-14"
+                },
+                {
+                    "name": "Anya",
+                    "gender": "Male",
+                    "birthdate": "2017-10-10"
+                }
+            ]
+        }
+    ]
+}
