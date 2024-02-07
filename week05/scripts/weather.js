@@ -1,10 +1,12 @@
+import apiKeys from './apiKeys.js';
+
 //select HTML elements
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather';
-const apiKey = '4910081b5cc7a71e992363ff81226807';
+const apiKey = apiKeys.openWeatherMap;
 
 const apiFetch = async () => {
     
