@@ -1,0 +1,66 @@
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Pridi', serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #4815a1;
+}
+
+h2 {
+    color: #4815a1;
+}
+
+main {
+    background-color: #e3e1ef;
+    padding: 1rem;
+    box-shadow: 0 0 30px #777;
+}
+
+#cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #c7c5ff;
+    border: 2px dotted #693793;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+p {
+    margin: 0;
+  }
+
+  img {
+    width: auto;
+      max-width: 340px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    border-top: 1px solid #555;
+    padding: 20px;
+    text-align: center;
+    color: #4815a1;
+    margin-top: 3.5rem;
+  }
