@@ -241,5 +241,18 @@ iframe {
 
 
 #info p {
-    padding-bottom: 0;
+    padding-bottom: .5rem;
+    padding-top: 0;
 }
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+

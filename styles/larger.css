@@ -51,6 +51,10 @@
         padding: 2rem;
     }
 
+    .weather-card {
+        flex-direction: row;
+    }
+
     #menu {
 		display: none; /* hide hamburger button */
 	}
