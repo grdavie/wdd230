@@ -171,7 +171,7 @@ main.dark .card {
 
 .card li {
     padding: .5rem;
-    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .card a {
@@ -248,7 +248,6 @@ iframe {
 #info p {
     padding-bottom: .5rem;
     padding-top: 0;
-    font-size: 1.2rem;
 }
 
 .weather-card {
@@ -259,7 +258,6 @@ iframe {
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 0;
-    font-size: 1.2rem;
 }
 
 
