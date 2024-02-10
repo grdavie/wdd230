@@ -562,6 +562,140 @@ form input.submitBtn {
     font-size: 3rem;
 }
 
+/*Directory Page*/
+
+#members-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: .4rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+ 
+}
+
+#members-cards section {
+    text-align: center;
+    margin: .5rem;
+    border: 1px dotted var(--borderlight);
+    padding: 2rem 1rem;
+    border-radius: 4px;
+}
+
+
+#members-cards section > * {
+	margin: 0.2rem;
+}
+
+#members-cards img:hover {
+    transform: scale(1.3);
+    padding: .5rem;
+}
+
+#members-cards h2 {
+    font-size: 1.3rem;
+    padding-top: .5rem;
+    padding-bottom: 0;
+}
+
+#members-cards h3 {
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--accent1);
+    padding-top: 0;
+    padding-bottom: .2rem;
+}
+
+#web-link {
+    display: none; /*hide from grid view*/
+}
+
+/*List view*/
+
+.list-view #web-link {
+    color: var(--primary);
+    line-height: 2rem;
+    display:initial;
+}
+
+.list-view #web-link:hover {
+    color: var(--drk3);
+    font-weight: bold;
+}
+
+#members-cards.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+#members-cards.list-view section {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#members-cards.list-view img {
+    display: none;
+}
+
+.list-view #member-email {
+    display: none;
+}
+
+#members-cards.list-view section > * {
+    margin: 0 0;
+}
+
+
+#members-cards.list-view h2, #members-cards.list-view h3 {
+    font-size: 1rem;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-style: normal;
+    text-align: left;
+    margin: 0;
+}
+
+#members-cards.list-view h3 {
+    text-align: left;
+    font-weight: 400;
+    padding-bottom: .5rem;
+    font-style: italic;
+}
+
+#members-cards.list-view section:nth-child(even){
+    background-color: var(--bgcolor);
+}
+
+
+#viewBtns {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+#gridBtn, #listBtn {
+    border: 1px;
+    border-radius: 4px;
+    margin: .2rem;
+}
+
+#gridBtn:hover, #listBtn:hover {
+    cursor: pointer;
+    background-color: var(--secondary);
+}
+
+#viewBtns img {
+    text-align: center;
+    padding: 2px;
+}
+
+
+
+
+
 footer {
     background-color: var(--primary);
     margin-top: 1.5rem;

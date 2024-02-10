@@ -31,9 +31,12 @@ function displayMembers (members) {
         let name = document.createElement('h2');
         let address = document.createElement('p');
         let contact = document.createElement('div');
+        contact.id = "contact-div";
         let phone = document.createElement('span');
         let email = document.createElement('span');
+        email.id = "member-email";
         let website = document.createElement('a');
+        website.id = "web-link";
         let category = document.createElement('h3');
         let a = document.createElement('a');
 
@@ -42,7 +45,7 @@ function displayMembers (members) {
         logo.setAttribute('alt', `Logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         logo.setAttribute('width', 'auto');
-        logo.setAttribute('height', '100')
+        logo.setAttribute('height', '80')
 
         a.setAttribute('href', '#');
         a.appendChild(logo);
@@ -63,13 +66,31 @@ function displayMembers (members) {
         //append to card
         card.appendChild(a);
         card.appendChild(name);
+        card.appendChild(category);
         card.appendChild(address);
         card.appendChild(contact);
         card.appendChild(website);
-        card.appendChild(category);
+
 
         //append to div
         membersCard.appendChild(card);
 
     });
+}
+
+//Layout View
+//use membersCards instead of display
+
+const listBtn = document.querySelector('#listBtn');
+const gridBtn = document.querySelector('#gridBtn');
+
+
+gridBtn.addEventListener("click", () => {;
+    membersCard.classList.remove("list-view");
+});
+
+listBtn.addEventListener("click", showList);
+
+function showList () {
+    membersCard.classList.add("list-view");;
 }
