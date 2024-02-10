@@ -588,11 +588,6 @@ form input.submitBtn {
 	margin: 0.2rem;
 }
 
-#members-cards img:hover {
-    transform: scale(1.3);
-    padding: .5rem;
-}
-
 #members-cards h2 {
     font-size: 1.3rem;
     padding-top: .5rem;
