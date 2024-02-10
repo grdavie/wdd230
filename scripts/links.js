@@ -32,9 +32,6 @@ function displayLinks (weeks){
         //build li content
         weekTitle.textContent = `${week.week}: `;
 
-        let a = document.createElement('a');
-        let bar = document.createElement('span');
-
         li.appendChild(weekTitle);
 
         //elements to add to the li - each links inside the week line or inner array
