@@ -296,7 +296,7 @@
 
     #members-cards.list-view section {
         display: grid;
-        grid-template-columns: 1px 3fr 1fr 4fr 2fr 3fr;
+        grid-template-columns: 1px 3fr 2fr 4fr 2fr 3fr;
         margin: .2rem;
         padding: 0.25rem;
         gap: .5rem;
@@ -328,7 +328,6 @@
     }
     
     #members-cards.list-view h3 {
-        text-align: center;
         font-weight: 400;
     }
     
