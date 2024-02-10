@@ -1,0 +1,85 @@
+{
+    "members": [
+        {
+            "name": "Forger & Briar Psychiatry",
+            "address": "132 Koenji South, Ostania, 4305",
+            "phone": "(02) 1234 5678",
+            "email": "hello@forgerbriar.com.au",
+            "url": "www.forgerbriar.com.au",
+            "membershipLvl": "Silver",
+            "logo": "images/fbp-logo.webp",
+            "category": "Health & Medical"
+        },
+        {
+            "name": "Konoha Bank",
+            "address": "143 Hyuga Avenue, Konohagakure, 4305",
+            "phone": "(02) 1234 5677",
+            "email": "support@konbank.com",
+            "url": "www.konbank.com",
+            "membershipLvl": "Gold",
+            "logo": "images/kb-logo.webp",
+            "category": "Finance & Banking"
+        },
+        {
+            "name": "Howl's Castle Enterprise",
+            "address": "12 Sophie St, Market Chipping, 4306",
+            "phone": "(02) 1234 5676",
+            "email": "help@hceproperties.com.au",
+            "url": "www.hceproperties.com.au",
+            "membershipLvl": "Bronze",
+            "logo": "images/hce-logos.webp",
+            "category": "Property & Real Estate"
+        },
+        {
+            "name": "Wright & Associates",
+            "address": "111 Lawton Ct, Neo Los Angeles, 4304",
+            "phone": "(02) 1234 5675",
+            "email": "hello@wrightattorneys.com.au",
+            "url": "www.wrightattorneys.com.au",
+            "membershipLvl": "Gold",
+            "logo": "images/wa-logos.webp",
+            "category": "Legal"
+        },
+        {
+            "name": "Jujutsu Technical College",
+            "address": "209 Tokyo Rd, Noroi, 4304 ",
+            "phone": "(02) 1234 5674",
+            "email": "inquiries@jjtc.edu",
+            "url": "www.jjtc.edu",
+            "membershipLvl": "Gold",
+            "logo": "images/jjk-logos.webp",
+            "category": "Education"
+        },
+        {
+            "name": "UA Heroes Association",
+            "address": "51 All Might St, New Tokyo, 4307",
+            "phone": "(02) 1234 5674",
+            "email": "hello@ua-heroes.org",
+            "url": "www.ua-heroes.org",
+            "membershipLvl": "NP",
+            "logo": "images/ua-logos.webp",
+            "category": "Community Services"
+        },
+        {
+            "name": "Gintoki Job Services",
+            "address": "8A Edo Avenue, Yorozuya, 4307",
+            "phone": "(02) 1234 5673",
+            "email": "jobs@gintokijobs.org",
+            "url": "www.gintokijobs.org",
+            "membershipLvl": "NP",
+            "logo": "images/gjs-logos.webp",
+            "category": "Employment"
+        },
+        {
+            "name": "Restaurant Yukihira",
+            "address": "13 Totsuki Blvd, New Tokyo, 4307",
+            "phone": "(02) 1234 5673",
+            "email": "hello@yukihiras.com.au",
+            "url": "www.yukihiras.com.au",
+            "membershipLvl": "Silver",
+            "logo": "images/ry-logos.webp",
+            "category": "Food"
+        }
+        
+    ]
+}
