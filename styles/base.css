@@ -169,6 +169,10 @@ main.dark .card {
     padding: 1.5rem;
 }
 
+.card li {
+    padding: .5rem;
+}
+
 .card a {
     color: #4F3303;
 }
