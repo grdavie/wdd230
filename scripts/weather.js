@@ -34,10 +34,12 @@ const apiFetch = async () => {
 
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;F `;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', `${desc} weather icon`);
+    weatherIcon.setAttribute('height', 75);
+    weatherIcon.setAttribute('width', 75)
     captionDesc.textContent = `- ${desc}`;
 }
 
