@@ -48,6 +48,7 @@ function displayMembers (members) {
         logo.setAttribute('height', '80')
 
         a.setAttribute('href', '#');
+        a.setAttribute('title', `${member.name} logo with website link`);
         a.appendChild(logo);
 
         //text content
@@ -56,6 +57,7 @@ function displayMembers (members) {
         phone.textContent = `${member.phone}`;
         email.textContent = ` | ${member.email}`;
         website.setAttribute('href', '#');
+        website.setAttribute('title', `${member.name} Website Link`);
         website.textContent = `${member.url}`;
         category.textContent = `${member.category}`;
 
