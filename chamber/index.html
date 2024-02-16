@@ -59,8 +59,9 @@
     </div>
     <main class="home-grid">
         <section id="weather">
-            <h2>Weather</h2>
-            <h3>Weather information goes here</h3>
+            <div class="weather-card"><span class="weather-txt">Today at Ipswich: </span><img id="weather-icon" src="#" alt="#">
+                <span id="current-temp"></span><span id="figcaption"></span></div>
+            <div class="weather-card"><span class="weather-txt">3-day Forecast: </span><span id="forecast-line"></span></div>
         </section>
         <section id="current">
             <h2>Discover the Latest</h2>
@@ -113,5 +114,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js" type="module" async></script>
 </body>
 </html>

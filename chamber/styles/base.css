@@ -198,7 +198,30 @@ header {
 #weather {
     margin-top: 50px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
+
+.weather-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#forecast-line img {
+    display: inline;
+    vertical-align: middle;
+}
+
+
+
+
+
 
 #contact-home {
     margin-top: 1rem;
