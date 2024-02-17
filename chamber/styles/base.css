@@ -749,8 +749,51 @@ form input.submitBtn {
     padding: 2px;
 }
 
+/*BANNER*/
+.home-grid {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px; /*height of the banner*/
+}
 
+.banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure it's above other content */
+    opacity: .9;
+}
 
+.banner h3 {
+    font-style: italic;
+    font-size: 1rem;
+    color: #555;
+}
+
+.banner span {
+    font-family: 'DM Serif Display', serif;
+    color: var(--primary);
+    font-style: normal;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
 
 
 footer {
