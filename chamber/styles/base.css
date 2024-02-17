@@ -207,10 +207,33 @@ header {
     margin-bottom: 0;
 }
 
+#weather-container {
+    border: 2px dotted var(--primary);
+    padding: 2rem;
+    margin-top: 1rem;
+    background-color: var(--bgcolor2);
+    border-radius: 8px;
+}
+
 .weather-card {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.weather-card span {
+    padding: .2rem;
+}
+
+.weather-txt {
+    border-bottom: 1.5px dotted var(--primary);
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--primary);
+    margin-bottom: .5rem;
 }
 
 #forecast-line img {
@@ -218,9 +241,25 @@ header {
     vertical-align: middle;
 }
 
+#forecast-line {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
 
+#forecast-line span {
+    padding: 0;
+    margin: 0;
+}
 
+#forecast-line .bar {
+    display: none;
+}
 
+#forecast-line .fDay {
+    font-weight: bold;
+}
 
 
 #contact-home {

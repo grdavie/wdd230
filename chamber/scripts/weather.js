@@ -28,7 +28,7 @@ const apiFetch = async () => {
         if (response.ok) {
             const data = await response.json();
             const fData = await fResponse.json();
-            console.log(fData);
+            //console.log(fData);
             //console.log(data); //testing
             displayResults(data);
             displayForecast(fData.list);
@@ -49,7 +49,7 @@ function displayResults(data) {
     weatherIcon.setAttribute('alt', `${desc} weather icon`);
     weatherIcon.setAttribute('height', 44);
     weatherIcon.setAttribute('width', 44)
-    captionDesc.textContent = `- ${desc}`;
+    captionDesc.textContent = ` ${desc} `;
 }
 
 function displayForecast(list) {
@@ -71,7 +71,7 @@ function displayForecast(list) {
         let date = i.dt_txt;
         let dateTime = new Date(date);
         let dayOfWeek = dateTime.toLocaleDateString('en-US', { weekday: 'short' });
-        day.textContent = `${dayOfWeek} - `;
+        day.textContent = `${dayOfWeek} `;
 
         //fDesc
         let fDescMsg = i.weather[0].description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
