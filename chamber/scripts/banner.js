@@ -2,7 +2,7 @@ const closeBtn = document.getElementById('closeBtn');
 const banner = document.getElementById('banner');
 
 // Define the allowed days as an array of day indexes (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
-const allowedDays = [1, 2, 3, 6]; // Monday, Tuesday, and Wednesday
+const allowedDays = [1, 2, 3]; // Monday, Tuesday, and Wednesday
 
 // Get the current day of the week (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
 const dayOfWeek = new Date().getDay();
