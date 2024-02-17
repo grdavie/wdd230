@@ -301,11 +301,26 @@ h2 {
 
 }
 
+
+#spotlight-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
 #current img {
-    width: 70%;
+    width: 100%;
     min-width: 300px;
     margin-bottom:1.5rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    max-width: 400px;
 }
+
 
 .button-box:hover {
     background-color: rgba(0, 0, 0, 0.1);
@@ -637,7 +652,7 @@ form input.submitBtn {
  
 }
 
-#members-cards section {
+#members-cards section, #spotlight-card section {
     text-align: center;
     margin: .5rem;
     border: 1px dotted var(--borderlight);
@@ -646,23 +661,32 @@ form input.submitBtn {
 }
 
 
-#members-cards section > * {
+#spotlight-card section {
+    margin: 1.5rem;
+    min-width: 300px;
+    width: 100%;
+}
+
+
+#members-cards section, #spotlight-card section > * {
 	margin: 0.2rem;
 }
 
-#members-cards h2 {
+#members-cards h2, #spotlight-card h2 {
     font-size: 1.3rem;
     padding-top: .5rem;
     padding-bottom: 0;
 }
 
-#members-cards h3 {
+
+#members-cards h3, #spotlight-card h3 {
     font-size: .8rem;
     font-style: italic;
     color: var(--accent1);
     padding-top: 0;
     padding-bottom: .2rem;
 }
+
 
 #web-link {
     display: none; /*hide from grid view*/
@@ -798,7 +822,7 @@ form input.submitBtn {
 
 footer {
     background-color: var(--primary);
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
