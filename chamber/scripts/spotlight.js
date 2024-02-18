@@ -52,7 +52,8 @@ function displaySpotlight(members) {
         logo.setAttribute('height', '150');
 
         // Set attributes for anchor tag
-        a.setAttribute('href', '#');
+        a.setAttribute('href', 'https://www.byui.edu/');
+        a.setAttribute('target', '_blank')
         a.setAttribute('title', `${member.name} logo with website link`);
         a.appendChild(logo);
 

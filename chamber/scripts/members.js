@@ -31,12 +31,12 @@ function displayMembers (members) {
         let name = document.createElement('h2');
         let address = document.createElement('p');
         let contact = document.createElement('div');
-        contact.id = "contact-div";
+        contact.classList.add("contact-div");
         let phone = document.createElement('span');
         let email = document.createElement('span');
-        email.id = "member-email";
+        email.classList.add("member-email");
         let website = document.createElement('a');
-        website.id = "web-link";
+        website.classList.add("web-link");
         let category = document.createElement('h3');
         let a = document.createElement('a');
 
@@ -47,7 +47,8 @@ function displayMembers (members) {
         logo.setAttribute('width', 'auto');
         logo.setAttribute('height', '80')
 
-        a.setAttribute('href', '#');
+        a.setAttribute('href', 'https://www.byui.edu/');
+        a.setAttribute('target', '_blank')
         a.setAttribute('title', `${member.name} logo with website link`);
         a.appendChild(logo);
 
@@ -56,7 +57,8 @@ function displayMembers (members) {
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
         email.textContent = ` | ${member.email}`;
-        website.setAttribute('href', '#');
+        website.setAttribute('href', 'https://www.byui.edu/');
+        website.setAttribute('target', '_blank' )
         website.setAttribute('title', `${member.name} Website Link`);
         website.textContent = `${member.url}`;
         category.textContent = `${member.category}`;

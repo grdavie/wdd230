@@ -688,19 +688,19 @@ form input.submitBtn {
 }
 
 
-#web-link {
+#members-cards .web-link {
     display: none; /*hide from grid view*/
 }
 
 /*List view*/
 
-.list-view #web-link {
+#members-cards.list-view .web-link {
     color: var(--primary);
     line-height: 2rem;
     display:initial;
 }
 
-.list-view #web-link:hover {
+#members-cards.list-view .web-link:hover {
     color: var(--drk3);
     font-weight: bold;
 }
@@ -721,7 +721,7 @@ form input.submitBtn {
     display: none;
 }
 
-.list-view #member-email {
+.list-view .member-email {
     display: none;
 }
 
