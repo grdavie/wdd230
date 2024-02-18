@@ -822,8 +822,10 @@ form input.submitBtn {
 }
 
 /*Contact*/
+
 #desc {
-    max-width: 67vw;
+    max-width: 80vw;
+    width: 90%;
 }
 
 #contact-form {

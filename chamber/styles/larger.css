@@ -439,6 +439,10 @@
     #desc {
         max-width: 470px;
     }
+
+    #join #desc {
+        max-width: 470px;
+    }
     
 
 }
