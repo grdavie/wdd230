@@ -821,6 +821,39 @@ form input.submitBtn {
     font-size: 1.5rem;
 }
 
+/*Contact*/
+#desc {
+    max-width: 67vw;
+}
+
+#contact-form {
+    margin: 1.5rem;
+}
+
+#contact-details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.contact-info {
+    margin: 2rem 5rem;
+    text-align: center;
+}
+
+.contact-info > * {
+    margin: .5rem 0;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
 
 footer {
     background-color: var(--primary);

@@ -431,4 +431,14 @@
         padding: 1rem;
     }
 
+    #contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #desc {
+        max-width: 470px;
+    }
+    
+
 }

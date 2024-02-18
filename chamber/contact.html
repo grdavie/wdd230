@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Ipswich Chamber of Commerce</title>
-    <meta name="description" content="Confirmation Page after completeing the form to join the Ipswich Chamber of Commerce">
+    <title>Contact - Ipswich Chamber of Commerce</title>
+    <meta name="description" content="Send Messages or Ask the Ipswich Chamber of Commerce Anything!">
     <meta name="author" content="Gayle Reyna-Davie">
 
      <!--Normalise-->
@@ -23,7 +23,7 @@
     <link rel="icon" href="ic.ico">
 
     <!--Social Media META tags-->
-    <meta property="og:title" content="Ipswich Chamber of Commerce">
+    <meta property="og:title" content=" Join the Ipswich Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg">
     <meta property="og:url" content="https://grdavie.github.io/wdd230/chamber">
@@ -39,16 +39,65 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li> 
-                <li><a href="contact.html">Contact</a></li>
-                <li class="active"><a href="join.html">Join</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </div>
-    <main class="ty-grid">
-        <img src="images/success.svg" alt="check icon" width="80" height="80">
-        <h1>Thank you!</h1>
-        <h2>Your application to join has been received. <br>A confirmation email will be sent shortly</h2>
-        <p>Please check your spam or junk folder. <br>If you have any questions or concerns, please contact us.</p>
+    <main class="contact-grid">
+        
+        <section class="join-head">
+            <h1>Contact the Chamber</h1>
+        </section>
+
+        <form id="contact-form" method="get" action="success.html">
+        <!--Applicant Information-->
+        <fieldset>
+            <legend>How Can We Help?</legend>
+            <div class="required">*Required fields</div>
+
+            <label class="top">Name<span class="req-note">*</span><input type="text" id="contact-fname" name="fname" required></label>
+            <label class="top">E-mail Address<span class="req-note">*</span><input type="email" id="contact-email" name="email" required placeholder="your-email@domain.com"></label>
+            <label class="top">Mobile Number<span class="req-note">*</span><input type="tel" id="contact-mobile" name="mobile" pattern="^\+?[0-9]+$" required></label>
+
+            <label class="top">Business/Organisation Name<input type="text" id="contact-bname" name="bname"></label>
+            <label class="top">Subject<input type="text" id="subject" name="subject" placeholder="Add a subject"></label>
+
+            <!--Add JS to limit word input-->
+            <label class="top">Message<span class="req-note">*</span><textarea id="desc" name="desc" placeholder="Type your questions or concerns here" required></textarea></label>
+            <div class="charCount">Characters remaining: <span id="count">500</span></div>
+            
+            <!--Timestamp Info-->
+            <input type="hidden" id="timestamp" name="timestamp">
+
+        </fieldset>
+
+        <input type="submit" value="Send Message" class="submitBtn">
+
+        </form>
+
+        <div id="contact-details">
+            <section class="contact-info">
+                <img src="images/phone.svg" alt="phone icon">
+                <h2>Phone</h2>
+                <p>(02) 7234 5678</p>
+            </section>
+            <section class="contact-info">
+                <img src="images/email.svg" alt="email icon">
+                <h2>Email</h2>
+                <p>hello@ipswich-chamber.org.au</p>
+            </section>
+            <section class="contact-info">
+                <img src="images/address.svg" alt="address icon">
+                <h2>Address</h2>
+                <p>123 Chamber Street,<br>Ipswich QLD 4305</p>
+            </section>
+            <section class="contact-info">
+                <img src="images/post.svg" alt="post icon">
+                <h2>Postal Address</h2>
+                <p>PO Box 123<br>Ipswich QLD 4305</p>
+            </section>
+        </div>
 
     </main>
     <footer>
@@ -79,5 +128,6 @@
     </footer>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/limitWords.js" defer></script>
 </body>
 </html>
