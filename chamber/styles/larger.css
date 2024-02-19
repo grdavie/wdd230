@@ -124,6 +124,11 @@
         margin-right: 2rem;
     }
 
+    #current img {
+        width: 100%;
+        min-width: 300px;
+    }
+
     .image-container img:hover {
         transform: scale(1.2);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -399,12 +404,17 @@
     #spotlight-card {
         flex-direction: row;
         flex-wrap: wrap;
+        border: none;
     }
 
     #spotlight-card section {
         background-color: white;
         max-width: fit-content;
         width: 100%;
+        min-width: 300px;
+        border: 1px dotted var(--borderlight);
+        border-radius: 4px;
+        margin: 1.5rem;
     }
 
     #spotlight-card section > * {
@@ -429,6 +439,12 @@
     #spotlight-card img:hover {
         transform: scale(1.2);
         padding: 1rem;
+    }
+
+    #spotlight-card img {
+        height: 150px;
+        width: auto;
+
     }
 
     #contact-form {

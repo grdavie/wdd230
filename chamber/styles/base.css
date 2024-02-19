@@ -302,24 +302,20 @@ h2 {
 }
 
 
-#spotlight-card {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-
 #current img {
-    width: 100%;
-    min-width: 300px;
+    width: 90%;
+    min-width: 200px;
     margin-bottom:1.5rem;
     margin-left: .5rem;
     margin-right: .5rem;
     max-width: 400px;
 }
+
+.image-container {
+    margin: .5rem;
+}
+
+
 
 
 .button-box:hover {
@@ -652,7 +648,7 @@ form input.submitBtn {
  
 }
 
-#members-cards section, #spotlight-card section {
+#members-cards section {
     text-align: center;
     margin: .5rem;
     border: 1px dotted var(--borderlight);
@@ -660,11 +656,31 @@ form input.submitBtn {
     border-radius: 4px;
 }
 
+#spotlight-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted var(--primary);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
 
 #spotlight-card section {
-    margin: 1.5rem;
-    min-width: 300px;
+    margin: .2rem 1.5rem;
+    min-width: 100px;
     width: 100%;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#spotlight-card img {
+    height: 100%;
+    min-height: 80px;
+    width: 90%;
 }
 
 
