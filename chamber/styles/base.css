@@ -811,7 +811,23 @@ form input.submitBtn {
     align-items: center;
     justify-content: center;
     z-index: 1000; /* Ensure it's above other content */
-    opacity: .9;
+    opacity: 0; /* Start with opacity 0 */
+    visibility: hidden; /* Initially hidden */
+    animation-name: slideIn; /* Name of the animation */
+    animation-duration: 1s; /* Duration of the animation */
+    animation-delay: 1s; /* Delay before the animation starts */
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -150px; /* Start position at the bottom */
+    }
+    to {
+        bottom: 0; /* End position at the bottom */
+        opacity: 0.9; /* End with opacity 0.9 */
+        visibility: visible; /* Show the banner */
+    }
 }
 
 .banner h3 {
