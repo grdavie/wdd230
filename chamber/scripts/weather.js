@@ -28,8 +28,8 @@ const apiFetch = async () => {
         if (response.ok) {
             const data = await response.json();
             const fData = await fResponse.json();
-            console.log(fData);
-            console.log(data); //testing
+            //console.log(fData);
+            //console.log(data); //testing
             displayResults(data);
             displayForecast(fData.list);
         } else {
@@ -54,7 +54,7 @@ function displayResults(data) {
 
 function displayForecast(list) {
 
-    const indices = [7,12,19]; //next 3-days at 00:00:00 timestamp
+    const indices = [8,16,24]; //next 3-days at 00:00:00 timestamp
     indices.forEach((index) => {
 
         const i = list[index];
@@ -92,7 +92,7 @@ function displayForecast(list) {
         lineItem.appendChild(day);
         lineItem.appendChild(icon);
         lineItem.appendChild(temp);
-        if (index !== 19) {
+        if (index !== 24) {
             lineItem.appendChild(fDesc);
             let bar = document.createElement('span');
             bar.textContent = " | ";
